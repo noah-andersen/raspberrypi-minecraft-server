@@ -1,6 +1,6 @@
 # Raspberry Pi Minecraft Server Setup 
 
-When I first got my Raspberrypi 5 16GB RAM (major overkill), I decided the first thing I would do is self host a Minecraft server so I could make friends... it hasn't worked.
+When I first got my Raspberrypi 5 16GB RAM (major overkill), I decided the first thing I would do is self host a Minecraft server so I could make friends... it hasn't worked. So pls good ppl msg me so I can make friends.
 
 It was a total pain to go through all the system set up & commands, espcially trying to set port forwarding. So, I made this repo so that you don't have to be sad like me. 👍
 
