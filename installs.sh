@@ -31,3 +31,7 @@ chmod +x playit-linux-aarch64
 # Move the start.sh script to the minecraft_server directory and make it executable
 mv ../utils/start.sh .
 chmod +x start.sh
+
+# Move the console.sh script to the utils directory and make it executable
+mv ../utils/console.sh .
+chmod +x console.sh

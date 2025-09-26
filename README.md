@@ -6,6 +6,8 @@ It was a total pain to go through all the system set up & commands, espcially tr
 
 This repo provides everything you need to run a modern Minecraft Java server (1.21.8) on a 64-bit Raspberry Pi OS, complete with automated installation, tunneling, and systemd service management.
 
+<img src="imgs/raspi-mc.png" alt="Raspberrypi Minecraft" width="50%">
+
 ## Features
 - **Automated Installation**: Scripts to install Java 21 from Terarium, Minecraft server files, tmux, Playit agent, and more.
 - **Easy Server Management**: Start, stop, and manage your server with systemd and tmux.
@@ -22,17 +24,34 @@ This repo provides everything you need to run a modern Minecraft Java server (1.
    ```bash
    ./installs.sh
    ```
-3. **Set up the systemd service**
+3. **Sign up for free playit agent**
    ```bash
-   ./service_setup.sh
+   ./playit-linux-aarch64
    ```
-4. **Start playing!**
+
+   * This will provide you with a link to go to and sign up.
+   * Select Minecraft Java Service, copy over the code it generated for you, and then register your IP.
+
+   ![Playit Tunneling Service Image](imgs/playit-service.png)
+
+
+4. **Set up the systemd service**
+   ```bash
+   ./systemd.sh
+   ```
+5. **Start playing!**
    Your server will be running in the background and **accessible via the domain name that playit provides you**.
+
+6. **Attach to the Tmux Window to Access Minecraft Console for Commands**
+   ```bash
+   ./console.sh
+   ```
 
 ## File Overview
 - `installs.sh` – Installs all dependencies and sets up the Minecraft server directory.
-- `service_setup.sh` – Generates and enables a systemd service for automatic server management.
+- `systemd.sh` – Generates and enables a systemd service for automatic server management.
 - `utils/start.sh` – Launches the Minecraft server and Playit agent in tmux panes for easy control.
+- `utils/console.sh` - Attach to the tmux window to access the minecraft console
 
 ## Requirements
 - Raspberry Pi (64-bit OS recommended)
