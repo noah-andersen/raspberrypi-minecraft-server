@@ -6,7 +6,7 @@ It was a total pain to go through all the system set up & commands, espcially tr
 
 This repo provides everything you need to run a modern Minecraft Java server (1.21.8) on a 64-bit Raspberry Pi OS, complete with automated installation, tunneling, and systemd service management.
 
-<img src="imgs/raspi-mc.png" alt="Raspberrypi Minecraft" width="75%">
+<img src="imgs/raspi-mc.png" alt="Raspberrypi Minecraft" width="100%">
 
 ## Features
 - **Automated Installation**: Scripts to install Java 21 from Terarium, Minecraft server files, tmux, Playit agent, and more.
